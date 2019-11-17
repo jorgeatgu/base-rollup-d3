@@ -5,11 +5,11 @@ WIP[🤖]
 
 Migrating my starter project kit from Gulp to Rollup. The starter kit is ready to work with a reduced version of d3 based on importing only the necessary modules.
 
-postCSS to CSS
-Babel to JS
-Linters: eslint and Stylelint
-browsersync to launch a server
-Lint-staged to linter CSS with Stylelint before push to repository
+postCSS to CSS   
+Babel to JS   
+Linters: eslint and Stylelint   
+browsersync to launch a server   
+Lint-staged to linter CSS with Stylelint before push to repository   
 
 ```
 yarn install
@@ -32,5 +32,5 @@ Warning (!) Circular dependency: [issue](https://github.com/d3/d3-selection/issu
 
 # base
 
-[Base](https://github.com/jorgeatgu/base)
+[Base](https://github.com/jorgeatgu/base)   
 [Base d3](https://github.com/jorgeatgu/base-d3)
