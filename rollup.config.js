@@ -16,15 +16,24 @@ import nested from 'postcss-nested';
 import resolve from 'rollup-plugin-node-resolve';
 import browsersync from 'rollup-plugin-browsersync';
 
+const paths = {
+  js: 'src/js',
+  css: 'src/css',
+  images: 'src/img/*',
+  distCss: 'css/',
+  distJs: 'js/',
+  distImages: 'img/'
+};
+
 const plugins = [
   eslint({
     exclude: [
-      'src/css/**'
+      paths.css + '/**'
     ]
   }),
   babel({
     exclude: 'node_modules/**',
-    include: 'src/js/**',
+    include: paths.js + '/**',
     presets: ['@babel/preset-env']
   }),
   terser(),
@@ -45,19 +54,18 @@ const plugins = [
   commonjs()
 ];
 
-
 export default [{
-    input: 'src/js/index.js',
+    input: paths.js + '/index.js',
     output: {
-      file: 'js/index.js',
+      file: paths.distJs + '/index.js',
       format: 'esm'
     },
     plugins
   },
   {
-    input: 'src/js/d3.js',
+    input: paths.js + '/d3.js',
     output: {
-      file: 'js/d3.min.js',
+      file: paths.distJs + '/js/d3.min.js',
       format: 'umd',
       name: 'd3',
       moduleName: 'd3',
@@ -66,9 +74,9 @@ export default [{
     plugins
   },
   {
-    input: 'src/css/styles.css',
+    input: paths.css + '/styles.css',
     output: {
-      file: 'css/style.css',
+      file: paths.distCss + '/css/style.css',
       format: 'es'
     },
     plugins: [

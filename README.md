@@ -16,8 +16,6 @@ yarn install
 yarn serve
 ```
 
-
-
 Todo
 
 Shell script like [base](https://github.com/jorgeatgu/base/blob/master/initCSS.sh)
@@ -27,3 +25,9 @@ Stylelint
 
 This warning is annoying but there is no way to eliminate it.
 Warning (!) Circular dependency: [issue](https://github.com/d3/d3-selection/issues/168)
+
+
+# base
+
+[Base](https://github.com/jorgeatgu/base)
+[Base d3](https://github.com/jorgeatgu/base-d3)
