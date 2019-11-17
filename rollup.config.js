@@ -46,7 +46,7 @@ const plugins = [
     },
     files: [
       'src/**',
-      'csv/*.*',
+      'data/*.*',
       './*.html'
     ],
     open: true
@@ -100,7 +100,7 @@ export default [{
   },
   {
     watch: {
-      include: ['src/**', './*.html']
+      include: ['src/**', './*.html', 'data/**']
     }
   }
 ];
