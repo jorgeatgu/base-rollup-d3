@@ -22,8 +22,8 @@ yarn serve
 Todo
 
 Shell script like [base](https://github.com/jorgeatgu/base/blob/master/initCSS.sh)   
-Remove this error: Error: You must supply options.input to rollup
-[Show notifications(macOs) with errors.](https://github.com/MikeKovarik/rollup-plugin-notify)
+Remove this error: Error: You must supply options.input to rollup   
+[Show notifications(macOs) with errors.](https://github.com/MikeKovarik/rollup-plugin-notify)   
 Stylelint and postcss
 
 This warning is annoying but there is no way to eliminate it.
