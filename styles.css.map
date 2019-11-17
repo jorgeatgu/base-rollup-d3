@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,yBAAyB;AAC3B;;;;AAIA;EACE,aAAa;AACf","file":"styles.css","sourcesContent":["* {\n  box-sizing: border-box;\n  background-color: #f4b4d4;\n}\n\n\n\nhola {\n  display: none;\n}\n\n\n\n\n"]}

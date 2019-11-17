@@ -1,0 +1,55 @@
+{
+  "name": "base",
+  "version": "5.0.0",
+  "description": "Base for any project of Jorge Aznar, {civic/data/designer} based on Zaragoza ⦉ http://jorgeatgu.com ⦊",
+  "main": "indexz.js",
+  "keywords": [
+    "css",
+    "postcss",
+    "rollup",
+    "init"
+  ],
+  "author": "Jorge Aznar",
+  "lint-staged": {
+    "src/css/*.css": "stylelint"
+  },
+  "pre-commit": "lint-staged",
+  "scripts": {
+    "serve": "rollup -c --watch",
+    "lint-staged": "lint-staged"
+  },
+  "browserslist": "last 2 versions",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "d3-array": "^2.4.0",
+    "d3-axis": "^1.0.12",
+    "d3-ease": "^1.0.6",
+    "d3-format": "^1.4.2",
+    "d3-request": "^1.0.6",
+    "d3-scale": "^3.2.0",
+    "d3-selection": "^1.4.1",
+    "d3-time-format": "^2.2.2",
+    "d3-transition": "^1.3.0",
+    "lint-staged": "^9.4.3",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-custom-selectors": "^5.1.2",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-sorting": "^5.0.1",
+    "pre-commit": "^1.2.2",
+    "rollup": "^1.27.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-browsersync": "^1.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-watch": "^4.3.1"
+  },
+  "devDependencies": {
+    "rollup-plugin-postcss": "^2.0.3"
+  }
+}
