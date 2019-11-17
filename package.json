@@ -2,12 +2,13 @@
   "name": "base",
   "version": "5.0.0",
   "description": "Base for any project of Jorge Aznar, {civic/data/designer} based on Zaragoza ⦉ http://jorgeatgu.com ⦊",
-  "main": "indexz.js",
+  "main": "index.js",
   "keywords": [
     "css",
     "postcss",
     "rollup",
-    "init"
+    "init",
+    "d3"
   ],
   "author": "Jorge Aznar",
   "lint-staged": {
@@ -23,7 +24,6 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
-    "cssnano": "^4.1.10",
     "d3-array": "^2.4.0",
     "d3-axis": "^1.0.12",
     "d3-ease": "^1.0.6",
@@ -47,7 +47,6 @@
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.1.2",
-    "rollup-watch": "^4.3.1",
     "stylelint": "^12.0.0"
   },
   "devDependencies": {
