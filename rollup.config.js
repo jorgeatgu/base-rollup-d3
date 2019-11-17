@@ -11,6 +11,7 @@ import selector from 'postcss-custom-selectors';
 import customProperties from 'postcss-custom-properties';
 import sorting from 'postcss-sorting';
 import nested from 'postcss-nested';
+import stylelint from 'stylelint';
 
 // ------ global
 import resolve from 'rollup-plugin-node-resolve';
@@ -65,7 +66,7 @@ export default [{
   {
     input: paths.js + '/d3.js',
     output: {
-      file: paths.distJs + '/js/d3.min.js',
+      file: paths.distJs + '/d3.min.js',
       format: 'umd',
       name: 'd3',
       moduleName: 'd3',
@@ -76,7 +77,7 @@ export default [{
   {
     input: paths.css + '/styles.css',
     output: {
-      file: paths.distCss + '/css/style.css',
+      file: paths.distCss + '/style.css',
       format: 'es'
     },
     plugins: [
@@ -84,7 +85,9 @@ export default [{
         extract: true,
         sourceMap: true,
         plugins: [
-          atImport(),
+          atImport({
+            plugins: [stylelint]
+          }),
           selector(),
           customProperties(),
           sorting(),
