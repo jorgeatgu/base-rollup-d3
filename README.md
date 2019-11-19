@@ -6,14 +6,6 @@ WIP[🤖]
 Starter kit for data-viz projects with d3/js/postcss.    
 The starter kit is ready to work with a reduced version of d3 based on importing only the [necessary modules](https://github.com/jorgeatgu/base-rollup-d3/blob/master/src/js/d3.js).
 
-## Plugins
-
-postCSS to CSS   
-Babel to JS   
-Linters: eslint and Stylelint   
-browsersync to launch a server   
-Lint-staged to linter CSS with Stylelint before push to repository   
-
 ```
 yarn install
 ```
@@ -21,6 +13,16 @@ yarn install
 ```
 yarn serve
 ```
+
+## Plugins
+
+**Linters**: eslint[JavaScript] & Stylelint[CSS]
+**Minifiy**: teser[JavaScript] & CSSnano[CSS]
+**Server**: Browsersync
+Lint-staged to linter CSS with Stylelint before push to repository   
+
+## 
+
 
 Todo
 

@@ -12,7 +12,8 @@
   ],
   "author": "Jorge Aznar",
   "lint-staged": {
-    "src/css/*.css": "stylelint"
+    "src/css/*.css": "stylelint",
+    "src/js/*.js": "eslint"
   },
   "pre-commit": "lint-staged",
   "scripts": {
