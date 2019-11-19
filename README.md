@@ -42,3 +42,11 @@ yarn serve
 ├─ rollup.config.js       
 └─ package.json      
 ```
+
+![](rollup.gif)
+
+## License
+
+[MIT](LICENSE) © Jorge Aznar
+
+
