@@ -1,14 +1,22 @@
 #!/bin/bash
 
+GREEN='\033[00;32m'
+LRED='\033[01;31m'
+PURPLE='\033[00;35m'
+CYAN='\033[00;36m'
+
 function initRollup() {
-    echo -n "\e[94m\e[1mVamos a lanzar base ¿ya has creado una carpeta? (s/n): "
+    echo -n "
+    ${CYAN} Vamos a lanzar base ¿ya has creado una carpeta? (s/n): "
     read answer
         if echo "$answer" | grep -iq "^s" ;
     then
-        echo "Perfecto, vamos a comenzar con Base"
+        echo -e "
+        ${GREEN} Perfecto, vamos a comenzar con Base"
         initConCarpeta;
     else
-        echo -n "Pues elige el nombre de tu proyecto: "
+        echo -n "
+        ${PURPLE}Pues elige el nombre de tu proyecto: "
         read var_name &&
         mkdir "$var_name" &&
         cd "$var_name" &&
@@ -25,9 +33,11 @@ function initRollup() {
         git init &&
         git add . &&
         git commit -m 'init' &&
-        echo -e '\e[94m\e[1mEsto va a costar un poco' &&
+        echo -e "
+        ${LRED} Esto va a costar un pocor 🚨🚨" &&
         yarn install &&
-        echo -e '\e[94m\e[1mEl script ha terminado. Es hora de picar código! \U0001f913\n' &&
+        echo -e "
+        ${GREEN} El script ha terminado. Es hora de picar código! \U0001f913\n" &&
         afplay /System/Library/Sounds/Submarine.aiff
     fi
 }

@@ -62,7 +62,7 @@ export default [{
         format: 'esm'
       },
       {
-        file: 'index.min.js',
+        file: paths.distJs + '/index.min.js',
         format: 'iife',
         name: 'version'
       }

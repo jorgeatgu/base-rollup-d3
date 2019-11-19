@@ -21,7 +21,6 @@
     "lint-css": "stylelint src/css/**",
     "lint-staged": "lint-staged"
   },
-  "browserslist": "last 2 versions",
   "license": "MIT",
   "dependencies": {
     "babel-preset-env": "^1.7.0",
