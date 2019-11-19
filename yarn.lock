@@ -5474,6 +5474,13 @@ rollup-plugin-postcss@^2.0.3:
     rollup-pluginutils "^2.0.1"
     style-inject "^0.3.0"
 
+rollup-plugin-stylelint@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-stylelint/-/rollup-plugin-stylelint-0.0.4.tgz#1c7b8fb896ed1e7b5e929c6f4d4d8c2c85b3d39a"
+  integrity sha512-+x1+AOPGl59ObL4X//VCQAu4URoTpLNkHE1/Sg9bg6tRAKS3/qbaunKgV9Tyo2aXOi5a7cyu9Ar2QXrS1W5Vug==
+  dependencies:
+    rollup-pluginutils "^2.0.1"
+
 rollup-plugin-terser@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-5.1.2.tgz#3e41256205cb75f196fc70d4634227d1002c255c"

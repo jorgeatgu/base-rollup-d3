@@ -11,7 +11,7 @@ import selector from 'postcss-custom-selectors';
 import customProperties from 'postcss-custom-properties';
 import sorting from 'postcss-sorting';
 import nested from 'postcss-nested';
-import stylelint from 'stylelint';
+import stylelint from 'rollup-plugin-stylelint';
 
 // ------ global
 import resolve from 'rollup-plugin-node-resolve';
@@ -57,10 +57,16 @@ const plugins = [
 
 export default [{
     input: paths.js + '/index.js',
-    output: {
-      file: paths.distJs + '/index.js',
-      format: 'esm'
-    },
+    output: [{
+        file: paths.distJs + '/index.js',
+        format: 'esm'
+      },
+      {
+        file: 'index.min.js',
+        format: 'iife',
+        name: 'version'
+      }
+    ],
     plugins
   },
   {
@@ -81,13 +87,12 @@ export default [{
       format: 'es'
     },
     plugins: [
+      stylelint(),
       postcss({
         extract: true,
         sourceMap: true,
         plugins: [
-          atImport({
-            plugins: [stylelint]
-          }),
+          atImport(),
           selector(),
           customProperties(),
           sorting(),
