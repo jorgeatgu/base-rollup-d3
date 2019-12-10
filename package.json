@@ -23,8 +23,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.7",
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.2",
     "d3-array": "^2.4.0",
     "d3-axis": "^1.0.12",
     "d3-ease": "^1.0.6",

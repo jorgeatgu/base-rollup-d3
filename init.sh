@@ -23,7 +23,7 @@ function initRollup {
       git init &&
       git add . &&
       git commit -m 'init' &&
-      echo -e "${LRED}Esto va a costar un pocor 🚨🚨${RED}" &&
+      echo -e "${LRED}Esto va a costar un poco 🚨🚨${RED}" &&
       yarn install &&
       echo -e "${GREEN}El script ha terminado. Es hora de picar código! \U0001f913\n" &&
       afplay /System/Library/Sounds/Submarine.aiff &&
