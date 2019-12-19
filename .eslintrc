@@ -12,7 +12,6 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
         "d3": false,
-        "customElements": true,
         "HTMLImports": true,
         "ShadyDOM": true
     },

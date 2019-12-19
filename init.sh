@@ -12,7 +12,7 @@ function initRollup {
 
     function launch {
       mkdir css src js img &&
-      curl -O "https://raw.githubusercontent.com/jorgeatgu/base-rollup-d3/master/{.stylelintrc,.gitignore,.stylelintignore,package.json,rollup.config.js,index.html}" &&
+      curl -O "https://raw.githubusercontent.com/jorgeatgu/base-rollup-d3/master/{.stylelintrc,.eslintrc,.gitignore,.stylelintignore,package.json,rollup.config.js,index.html}" &&
       cd src &&
       mkdir css img js &&
       cd css &&
