@@ -1,0 +1,24 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "globals": {
+    "d3": false
+  },
+  "extends": ["eslint:recommended", "plugin:vue/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-multi-spaces": "error",
+    "keyword-spacing": ["error", { "after": true, "before": true }],
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": ["error", "always"],
+    "no-console": "off"
+  }
+}
